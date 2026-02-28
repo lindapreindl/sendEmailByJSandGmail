@@ -1,0 +1,208 @@
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+a {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+}
+
+a:hover {
+    color: #C63130;
+}
+
+header a:last-child {
+    color: #C63130;
+}
+
+header a:last-child:hover {
+    color: #8a2222;
+}
+
+header {
+    margin: 0;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border: 1px solid lightgray;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header {
+    margin: 0;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    height: 10vh;
+}
+
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p {
+    color: white;
+}
+
+.body {
+    /*background: linear-gradient(90deg, #BE8CEF 0%, rgba(61, 46, 232, 0.83) 100%);*/
+    padding-top: 12vh;
+    background-image: url(./plank.jpg);
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10px;
+    height: 100%;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    height: 70vh;
+    min-width: 370px;
+    border: 1px solid white;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+}
+
+.left-container {
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+    background-color: rgba(245, 63, 63, 0.5);
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    background-color: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-container {
+    display: flex;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.left-container p {
+    font-size: 0.9rem;
+}
+
+.right-inner-container {
+    width: 70%;
+    height: 80%;
+    text-align: center;
+}
+
+.left-inner-container {
+    height: 50%;
+    width: 80%;
+    text-align: center;
+    line-height: 22px;
+}
+
+input,
+textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid teal;
+}
+
+button {
+    border-radius: 4px;
+    background-color: rgba(245, 63, 63, 0.5);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 210px;
+    transition: all 0.5s;
+    margin: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+button:hover {
+    background-color: rgba(245, 63, 63, 1);
+}
